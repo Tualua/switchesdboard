@@ -1,0 +1,22 @@
+{
+	"dhcpserver": 
+		{
+			"ipaddr":"192.168.88.1",
+			"username":"user",
+			"password":"password"
+		},
+	"maxvlan":5,
+	"minvlan":3,
+	"switches" : [
+		{
+			"ipaddr":  "192.168.88.2",
+			"type":  "dlink",
+			"ignoreif":[49,50]
+		},
+		{
+			"ipaddr":  "192.168.88.3",
+			"type":  "cisco",
+			"ignoreif":["Gi1/0/4"]
+		}
+	]
+}
